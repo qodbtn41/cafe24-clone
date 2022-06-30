@@ -1,10 +1,15 @@
 import React from 'react';
+import Carousel from '../Common/Carousel';
+import Header from '../Common/Header';
+import ProductList from './ProductList';
 
 const Main = () => {
     return (
-        <div>
-            Main Page
-        </div>
+        <>
+            <Header></Header>
+            <Carousel></Carousel>
+            <ProductList></ProductList>
+        </>
     );
 };
 
