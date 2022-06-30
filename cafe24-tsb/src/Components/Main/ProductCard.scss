@@ -1,5 +1,34 @@
 .product_card{
+  border: 1px solid #DEE1E6;
+  border-radius: 5%;
+  width: 23%;
+  margin: 1%;
+}
 
+.product_card img{
+  width: 100%;
+}
+
+.product_image{
+  position: relative;
+}
+
+.product_image div{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+.product_image .hover{
+  background-color: rgba($color: #000000, $alpha: 0.15);
+}
+
+.product_card_footer{
+  font-weight: bold;
+}
+.product_card_footer.hover{
+  color: #3161F6;
 }
 
 .product_tags{
