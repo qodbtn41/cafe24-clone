@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import './ProductCard.scss';
-import sampleImage from '../../Resource/Image/ProductCardImageSample01.png';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
-const ProductCard = () => {
+const ProductCard = ({img}) => {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
@@ -12,10 +11,10 @@ const ProductCard = () => {
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}>
       <div className='product_image'>
-        <img src={sampleImage} alt='제품 이미지'/>
+        <img src={img} alt='제품 이미지'/>
         <div className={isHovering?'hover':''}></div>
       </div>
-      <div>
+      <div className='product_contents'>
         <div className='product_tags'>
           <div>PC</div>
           <div>Mobile</div>
