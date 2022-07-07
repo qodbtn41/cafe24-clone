@@ -1,3 +1,9 @@
+@media (min-width: 1440px) {
+  .product_list {
+    padding: 0% 10%;
+  }
+}
+
 .product_list{
   display: flex;
   justify-content:flex-start;
@@ -5,5 +11,5 @@
 }
 
 .product_list>div{
-  margin: 5px;
+  margin: 0.5rem;
 }
