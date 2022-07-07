@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './ProductCard.scss';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
-import { faArrowAltCircleDown } from "@fortawesome/free-regular-svg-icons";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const ProductCard = ({img}) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -27,7 +27,7 @@ const ProductCard = ({img}) => {
         </div>
         <div className={isHovering?'product_card_footer hover':'product_card_footer'}>
           <FontAwesomeIcon icon={faHeart}/>
-          <div>SAMPLE<FontAwesomeIcon icon="fa-regular fa-angle-right" /></div>
+          <div>SAMPLE <FontAwesomeIcon icon={faAngleRight} /></div>
         </div>
       </div>
     </div>
