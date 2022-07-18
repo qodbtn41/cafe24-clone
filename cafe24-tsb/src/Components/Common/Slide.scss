@@ -1,0 +1,25 @@
+@media (min-width: 0px) {
+  .slide>img{
+    height: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  .slide>img{
+    height: 25vw;
+  }
+}
+@media (min-width: 1440px) {
+  .slide>img{
+    height: 20vw;
+  }
+}
+
+.slide>img{
+  width: 100vw;
+  margin: auto;
+  // object-fit: contain;
+  // object-fit: cover;
+  // object-fit: fill;
+  // object-fit: none;
+  // object-fit: scale-down;
+}
