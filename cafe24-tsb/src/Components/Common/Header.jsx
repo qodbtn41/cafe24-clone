@@ -25,7 +25,7 @@ const Header = () => {
 
                 <li><FontAwesomeIcon icon={faHeart} /></li>
 
-                <li><a href="#">로그인</a></li>
+                <li><a href="/login">로그인</a></li>
                 <button>무료시작</button>
             </ul>
             <a href="#" class="navbar_togglebtn">
