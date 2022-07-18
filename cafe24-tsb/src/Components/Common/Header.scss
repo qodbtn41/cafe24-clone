@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding : 8px 50px;
+}
+
+.navbar_logo{
+    font-size: 24px;
+    color:white;
+    padding: 10px 12px;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size : 1.5rem;
+    font-family: "menu";
+}
+
+.navbar_menu li{
+    padding: 8px 12px;
+}
+
+.navbar_icons {
+    list-style: none;
+    color:black;
+    display: flex;
+}
+
+.navbar_icons li {
+    padding: 8px 12px;
+}
+
+button {
+    background-color: #3261f6;
+    color: white;
+    border-radius: 8px;
+    font-weight: 1000;
+    outline: 0;
+    border: 0;
+}
