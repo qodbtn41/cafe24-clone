@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from '../Common/Carousel';
 import Header from '../Common/Header';
 import ProductList from './ProductList';
 
 const Main = () => {
-    return (
+
+  return (
         <>
             <Header></Header>
             <Carousel></Carousel>
