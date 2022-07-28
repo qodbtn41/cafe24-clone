@@ -4,26 +4,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-const ProductCard = ({img}) => {
+const ProductCard = ({item}) => {
   const [isHovering, setIsHovering] = useState(false);
+  
 
   return (
     <div className='product_card'
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}>
       <div className='product_image'>
-        <img src={img} alt='제품 이미지'/>
+        <img src={item.image} alt='제품 이미지'/>
         <div className={isHovering?'hover':''}></div>
       </div>
       <div className='product_contents'>
         <div className='product_tags'>
-          <div>PC</div>
-          <div>Mobile</div>
-          <div>안전거래</div>
+          {item.tags.map((t)=><div>{t}</div>)}
         </div>
         <div>
-          <div className='product_name'>베이직_모바일무료</div>
-          <div className='product_price'>150,000원</div>
+          <div className='product_name'>{item.title}</div>
+          <div className='product_price'>{item.price}원</div>
         </div>
         <div className={isHovering?'product_card_footer hover':'product_card_footer'}>
           <FontAwesomeIcon icon={faHeart}/>
